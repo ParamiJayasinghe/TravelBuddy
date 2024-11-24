@@ -11,6 +11,9 @@ Real-time updates on booking statuses and itineraries.
 
 ## Technologies Used
 Figma: For designing the UI and creating interactive prototypes.
+
 React: For building the user interface and managing state.
+
 HTML/CSS: For structuring and styling the app.
+
 JavaScript: For dynamic interactions and application logic.
