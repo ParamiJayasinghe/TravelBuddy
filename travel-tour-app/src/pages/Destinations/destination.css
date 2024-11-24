@@ -1,0 +1,141 @@
+.destination {
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.destination-header {
+    background-color: #004aad;
+    color: white;
+    padding: 50px 20px;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.destination-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.filter-option, .sort-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.destination-details {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.destination-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.media {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.destination-photos {
+    width: 50%;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.destination-video {
+    width: 50%;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.top-attractions {
+    margin-bottom: 40px;
+}
+
+.top-attractions h2 {
+    font-size: 24px;
+}
+
+.top-attractions ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.top-attractions li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.travel-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.weather-info, .tips {
+    width: 45%;
+    text-align: left;
+}
+
+.weather-info h3, .tips h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.weather-info p, .tips ul {
+    font-size: 16px;
+}
+
+.tips ul {
+    padding-left: 20px;
+}
+
+.tips li {
+    font-size: 16px;
+    margin: 10px 0;
+}
