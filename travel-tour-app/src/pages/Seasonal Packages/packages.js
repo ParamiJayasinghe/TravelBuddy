@@ -1,42 +1,46 @@
 import React from 'react';
 import './packages.css';
+import Package01 from '../../Images/package 1.jpg';
+import Package02 from '../../Images/package 2.jpg';
+import Package03 from '../../Images/package 3.jpg';
+import Package04 from '../../Images/package 4.jpg';
+import Package05 from '../../Images/package 5.jpg';
+import Package06 from '../../Images/package 6.jpg';
+
 
 const SeasonalPackages = () => {
     const packages = [
         {
             id: 1,
-            name: 'Summer Escapade',
-            description: 'Experience the best of summer with this all-inclusive package to sunny beaches and exotic islands.',
-            price: '$499 per person',
-            image: 'https://via.placeholder.com/300x200',
+            image: Package01,
         },
         {
             id: 2,
-            name: 'Winter Wonderland',
-            description: 'Enjoy the magic of winter with cozy stays, snowy adventures, and unforgettable moments.',
-            price: '$599 per person',
-            image: 'https://via.placeholder.com/300x200',
+            image: Package02, 
         },
         {
             id: 3,
-            name: 'Spring Bloom',
-            description: 'Rejuvenate with this special spring package featuring lush gardens, vibrant festivals, and serene landscapes.',
-            price: '$399 per person',
-            image: 'https://via.placeholder.com/300x200',
+            image: Package03, 
         },
         {
             id: 4,
-            name: 'Autumn Retreat',
-            description: 'Savor the beauty of autumn with scenic views, warm retreats, and delightful seasonal flavors.',
-            price: '$449 per person',
-            image: 'https://via.placeholder.com/300x200',
+            image: Package04, 
+        },
+        {
+            id: 5,
+            image: Package05, 
+        },
+
+        {
+            id: 6,
+            image: Package06, 
         },
     ];
 
     return (
         <div className="seasonal-packages">
             <div className="header">
-                <h1>Unforgettable Adventures Await!</h1>
+                <h1>Unforgettable Experiences Await!</h1>
                 <p>
                     Explore our exclusive seasonal packages tailored for every traveler. Discover, relax, and create memories
                     to cherish forever.
@@ -47,15 +51,11 @@ const SeasonalPackages = () => {
                 {packages.map((pkg) => (
                     <div key={pkg.id} className="package-card">
                         <img src={pkg.image} alt={pkg.name} className="package-image" />
-                        <div className="package-info">
-                            <h2>{pkg.name}</h2>
-                            <p>{pkg.description}</p>
-                            <p className="package-price">{pkg.price}</p>
-                        </div>
                     </div>
                 ))}
             </div>
-        </div>
+            <div className="footer-spacing"></div>
+        </div> 
     );
 };
 

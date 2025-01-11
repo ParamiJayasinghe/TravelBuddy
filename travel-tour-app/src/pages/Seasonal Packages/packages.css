@@ -1,3 +1,4 @@
+/* Container for the whole page */
 .seasonal-packages {
     font-family: Arial, sans-serif;
     padding: 40px 20px;
@@ -5,6 +6,7 @@
     color: black;
 }
 
+/* Header section with a welcoming message */
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -22,6 +24,7 @@
     color: #333;
 }
 
+/* Package list section */
 .package-list {
     display: flex;
     flex-wrap: wrap;
@@ -29,43 +32,29 @@
     justify-content: space-between;
 }
 
+/* Styling each package card */
 .package-card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 48%;
+    width: 48%; /* Set the width to 48% for 2 items per row */
     transition: transform 0.3s ease;
 }
 
+/* On hover, enlarge the card slightly */
 .package-card:hover {
     transform: scale(1.05);
 }
 
+/* Image styling to show the full image */
 .package-image {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto; /* Ensure the height adjusts based on the image aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
     border-bottom: 2px solid #ccc;
 }
 
-.package-info {
-    padding: 20px;
-}
-
-.package-info h2 {
-    font-size: 24px;
-    margin: 10px 0;
-    color: #004aad;
-}
-
-.package-info p {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.package-price {
-    font-weight: bold;
-    color: #008000;
-    margin-top: 10px;
+.footer-spacing {
+    height: 50px; /* Ensures space between the last section and footer */
 }

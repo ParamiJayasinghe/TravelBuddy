@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './destination.css';
-import DEST01 from '../../Images/GallDesti01.jpg'
-import DEST02 from '../../Images/GallDesti02.jpg'
-import DEST03 from '../../Images/GallDesti03.jpg'
+import DEST01 from '../../Images/GallDesti01.jpg';
+import DEST02 from '../../Images/GallDesti02.jpg';
+import DEST03 from '../../Images/GallDesti03.jpg';
 
 const Destination = () => {
     const [searchQuery, setSearchQuery] = useState("");
@@ -33,6 +33,9 @@ const Destination = () => {
                         <option value="all">All</option>
                         <option value="beaches">Beaches</option>
                         <option value="mountains">Mountains</option>
+                        <option value="adventures">Adventures</option>
+                        <option value="leisure parks">Leisure parks</option>
+
                     </select>
                 </div>
                 <div className="sort-option">
@@ -40,6 +43,8 @@ const Destination = () => {
                     <select>
                         <option value="popularity">Popularity</option>
                         <option value="price">Price</option>
+                        <option value="ratings">Ratings</option>
+
                     </select>
                 </div>
             </div>
@@ -51,38 +56,51 @@ const Destination = () => {
             </div>
 
             <div className="media">
+            <h2 className="section-title">Watch Our Travel Highlights</h2>
+
                 <div className="destination-photos">
+                    <h2 className="photos-title">Galle Fort</h2>
                     <div className="photo-gallery">
-                    <div className="photo-View">
-                    <img src={DEST01} alt="destination01" className="photo" />
-                    <p>Above Vieew</p>
-                    </div>
-                    <div className="photo-View">
-                    <img src={DEST02} alt="destination02" className="photo" />
-                    <p>Above Vieew</p>
-                    </div>
-                    <div className="photo-View">
-                    <img src={DEST03} alt="destination03" className="photo" />
-                    <p>Above Vieew</p>
-                    </div>
+                        <div className="photo-View">
+                            <img src={DEST01} alt="destination01" className="photo" />
+                            <p>Above View</p>
+                        </div>
+                        <div className="photo-View">
+                            <img src={DEST02} alt="destination02" className="photo" />
+                            <p>City View</p>
+                        </div>
+                        <div className="photo-View">
+                            <img src={DEST03} alt="destination03" className="photo" />
+                            <p>Sunset View</p>
+                        </div>
                     </div>
                 </div>
-                <section className="destination-video">
-                <h2 className="section-title">Watch Our Travel Highlights</h2>
+            </div>
+
+            <section className="destination-video">
                 <div className="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/watch?v=AG-Lu8gqIXE" 
+                    <iframe
+                        src="https://www.youtube.com/embed/AG-Lu8gqIXE"
                         title="Travel Highlights"
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
                 </div>
             </section>
+
+            <div className="travel-tips">
+                <h3>Travel Tips</h3>
+                <ul>
+                    <li>Best time to visit: March - June</li>
+                    <li>Pack light and bring sunscreen</li>
+                    <li>Wear comfortable walking shoes</li>
+                    <li>Carry a camera to capture scenic views</li>
+                </ul>
             </div>
 
             <div className="top-attractions">
-                <h2>Top Attractions</h2>
+                <h3>Top Attractions</h3>
                 <ul>
                     <li>Great Wall of China</li>
                     <li>Eiffel Tower</li>
@@ -95,14 +113,9 @@ const Destination = () => {
                     <h3>Weather</h3>
                     <p>Sunny, 25°C</p>
                 </div>
-                <div className="tips">
-                    <h3>Travel Tips</h3>
-                    <ul>
-                        <li>Best time to visit: March - June</li>
-                        <li>Pack light and bring sunscreen</li>
-                    </ul>
-                </div>
             </div>
+
+            <div className="footer-spacing"></div>
         </div>
     );
 };

@@ -6,7 +6,7 @@
 }
 
 .destination-header {
-    background-color: #004aad;
+    background-color: #3a6296;
     color: white;
     padding: 50px 20px;
     text-align: left;
@@ -64,22 +64,30 @@ select {
 
 .media {
     display: flex;
+    flex-direction: column;
     gap: 40px;
     margin-top: 30px;
     text-align: left;
 }
 
 .destination-photos {
-    width: 50%;
+    text-align: center;
+}
+
+.photos-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #004aad;
 }
 
 .photo-gallery {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 .photo-gallery img {
-    width: 100%;
+    width: 200px;
     border-radius: 8px;
     height: auto;
 }
@@ -91,12 +99,11 @@ select {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-bottom: 20px;
     overflow: hidden;
-    width: 200px;
 }
 
 .video-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -112,54 +119,95 @@ select {
     margin-bottom: 20px;
     color: #333;
     text-transform: uppercase;
-    margin-left: 20px; 
+    margin-left: 20px;
+}
+
+.travel-tips {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #dae2e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.travel-tips h3 {
+    font-size: 22px;
+    color: #004aad;
+}
+
+.travel-tips ul {
+    padding: 0;
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.top-attractions {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #dae2e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-attractions h3 {
+    font-size: 22px;
+    color: #004aad;
+}
+
+.top-attractions ul {
+    padding: 0;
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    font-size: 16px;
+    color: #333;
 }
 
 
 .top-attractions {
-    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #dae2e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.top-attractions h2 {
-    font-size: 24px;
+.top-attractions h3 {
+    font-size: 22px;
+    color: #004aad;
 }
 
 .top-attractions ul {
-    list-style: none;
     padding: 0;
-    text-align: left;
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    font-size: 16px;
+    color: #333;
 }
 
-.top-attractions li {
-    font-size: 18px;
-    margin: 10px 0;
-}
 
 .travel-info {
-    display: flex;
-    justify-content: space-between;
     margin-top: 40px;
+    padding: 20px;
+    background-color: #dae2e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.weather-info, .tips {
-    width: 45%;
-    text-align: left;
-}
-
-.weather-info h3, .tips h3 {
+.travel-info h3 {
     font-size: 22px;
-    margin-bottom: 15px;
+    color: #004aad;
 }
 
-.weather-info p, .tips ul {
+.travel-info p {
+    padding: 0;
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
     font-size: 16px;
+    color: #333;
 }
 
-.tips ul {
-    padding-left: 20px;
-}
-
-.tips li {
-    font-size: 16px;
-    margin: 10px 0;
+.footer-spacing {
+    height: 50px; /* Ensures space between the last section and footer */
 }

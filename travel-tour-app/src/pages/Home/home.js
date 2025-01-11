@@ -12,6 +12,12 @@ import BUNGLOW from '../../Images/bunglow.jpg'
 import LAKE from '../../Images/lake cottages.jpg'
 import LAVINIA from '../../Images/mount lavinia.avif'
 import POOL from '../../Images/pool villa.jpg'
+import PACKAGE01 from '../../Images/package 1.jpg'
+import PACKAGE02 from '../../Images/package 2.jpg'
+import PACKAGE03 from '../../Images/package 3.jpg'
+import PACKAGE04 from '../../Images/package 4.jpg'
+import PACKAGE05 from '../../Images/package 5.jpg'
+import PACKAGE06 from '../../Images/package 6.jpg'
 
 const Home = () => {
     return (
@@ -84,16 +90,22 @@ const Home = () => {
                 <h2 className="section-title">Seasonal Packages</h2>
                 <div className="photos">
                     <div className="photo">
-                        <img src="package1.jpg" alt="Package 1" />
-                        <p>Winter Wonderland</p>
+                    <img src={PACKAGE01} alt="package01" className="photo" />
                     </div>
                     <div className="photo">
-                        <img src="package2.jpg" alt="Package 2" />
-                        <p>Spring Blossoms</p>
+                    <img src={PACKAGE02} alt="package02" className="photo" />
                     </div>
                     <div className="photo">
-                        <img src="package3.jpg" alt="Package 3" />
-                        <p>Summer Paradise</p>
+                    <img src={PACKAGE03} alt="package03" className="photo" />
+                    </div>
+                    <div className="photo">
+                    <img src={PACKAGE04} alt="package04" className="photo" />
+                    </div>
+                    <div className="photo">
+                    <img src={PACKAGE05} alt="package05" className="photo" />
+                    </div>
+                    <div className="photo">
+                    <img src={PACKAGE06} alt="package06" className="photo" />
                     </div>
                 </div>
             </section>

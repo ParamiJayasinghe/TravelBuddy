@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import './hotel.css';
+import Cinnamon from '../../Images/cinnamon.webp';
+import Cabana from '../../Images/cabana.jpg';
+import Bunglow from '../../Images/bunglow.jpg';
+import Cottage from '../../Images/lake cottages.jpg';
+import MountLavinia from '../../Images/mount lavinia.avif';
 
 const Hotel = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [accommodationType, setAccommodationType] = useState('all');
 
     const [hotels] = useState([
-        { id: 1, name: 'Hotel 1', district: 'Downtown', price: 150, rating: 4, image: 'https://via.placeholder.com/150', type: 'hotel' },
-        { id: 2, name: 'Villas 2', district: 'Beachfront', price: 200, rating: 5, image: 'https://via.placeholder.com/150', type: 'villa' },
-        { id: 3, name: 'Bungalow 3', district: 'City Center', price: 120, rating: 3, image: 'https://via.placeholder.com/150', type: 'bungalow' },
-        { id: 4, name: 'Cottage 4', district: 'Suburbs', price: 180, rating: 4, image: 'https://via.placeholder.com/150', type: 'cottage' },
-        { id: 5, name: 'Hotel 5', district: 'Uptown', price: 160, rating: 4, image: 'https://via.placeholder.com/150', type: 'hotel' },
+        { id: 1, name: 'Cinnamon Grand Hotel', district: 'Downtown', price: 150, rating: 4, image: Cinnamon, type: 'hotel' },
+        { id: 2, name: 'Villa', district: 'Beachfront', price: 200, rating: 5, image: Cabana, type: 'villa' },
+        { id: 3, name: 'Bungalow', district: 'City Center', price: 120, rating: 3, image: Bunglow, type: 'bungalow' },
+        { id: 4, name: 'Lake Cottages', district: 'Suburbs', price: 180, rating: 4, image: Cottage, type: 'cottage' },
+        { id: 5, name: 'Mount Lavinia Hotel', district: 'Uptown', price: 160, rating: 4, image: MountLavinia, type: 'hotel' },
     ]);
 
     const handleSearchChange = (e) => {
