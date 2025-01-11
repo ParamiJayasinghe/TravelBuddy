@@ -1,0 +1,90 @@
+.cart {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    color: #004aad;
+    margin-bottom: 30px;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-info {
+    max-width: 70%;
+}
+
+.item-info h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.item-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #008000;
+    margin-top: 10px;
+}
+
+.item-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-button, .remove-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-button {
+    background-color: #004aad;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #00337a;
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #cc0000;
+}

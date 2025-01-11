@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './destination.css';
+import DEST01 from '../../Images/GallDesti01.jpg'
+import DEST02 from '../../Images/GallDesti02.jpg'
+import DEST03 from '../../Images/GallDesti03.jpg'
 
 const Destination = () => {
     const [searchQuery, setSearchQuery] = useState("");
@@ -50,16 +53,32 @@ const Destination = () => {
             <div className="media">
                 <div className="destination-photos">
                     <div className="photo-gallery">
-                        <img src="https://via.placeholder.com/300" alt="Destination 1" />
-                        <img src="https://via.placeholder.com/300" alt="Destination 2" />
+                    <div className="photo-View">
+                    <img src={DEST01} alt="destination01" className="photo" />
+                    <p>Above Vieew</p>
+                    </div>
+                    <div className="photo-View">
+                    <img src={DEST02} alt="destination02" className="photo" />
+                    <p>Above Vieew</p>
+                    </div>
+                    <div className="photo-View">
+                    <img src={DEST03} alt="destination03" className="photo" />
+                    <p>Above Vieew</p>
+                    </div>
                     </div>
                 </div>
-                <div className="destination-video">
-                    <video controls>
-                        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <section className="destination-video">
+                <h2 className="section-title">Watch Our Travel Highlights</h2>
+                <div className="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=AG-Lu8gqIXE" 
+                        title="Travel Highlights"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen
+                    ></iframe>
                 </div>
+            </section>
             </div>
 
             <div className="top-attractions">

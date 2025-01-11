@@ -1,19 +1,30 @@
-import React from "react";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './navBar.css';
 
-const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <div className="pages">
-                <span className="nav-option">Home</span>
-                <span className="nav-option">Destinations</span>
-                <span className="nav-option">Hotels</span>
-                <span className="nav-option">Seasonal Offers</span>
-                <span className="nav-option">Cart</span>
-                <span className="nav-option">Contact Us</span>
-            </div>
-        </nav>
-    );
+const Navbar = ({ isLoggedIn, logoutUser }) => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        {isLoggedIn ? (
+          <>
+            <NavLink to="/home" className="nav-link">Home</NavLink>
+            <NavLink to="/destinations" className="nav-link">Destinations</NavLink>
+            <NavLink to="/hotels" className="nav-link">Hotels</NavLink>
+            <NavLink to="/seasonal-packages" className="nav-link">Seasonal Packages</NavLink>
+            <NavLink to="/cart" className="nav-link">Cart</NavLink>
+            <button onClick={logoutUser} className="nav-link logout-btn">Logout</button>
+          </>
+        ) : (
+          <>
+            <NavLink to="/" className="nav-link">Welcome</NavLink>
+            <NavLink to="/login" className="nav-link">Login</NavLink>
+            <NavLink to="/register" className="nav-link">Register</NavLink>
+          </>
+        )}
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
